@@ -16,7 +16,7 @@
 2. All those Single Abstract Method interfaces are annotated with @FunctionalInterface annotation.
 3. Some existing functional interfaces prior to Java 8 are Runnable and Comparator.
 4. Functional interface can have any number of default, static methods but can contain only one abstract method.
-   
+   ```
    @FunctionalInterface
    public interface Comparator<T> {
       int compare(T 01, T 02);
@@ -25,13 +25,14 @@
    public interface Runnable {
       public abstract void run();
    }
+   ```
 5. By default, methods defined in an interface are abstract and no need to mention abstract keyword to define it.
 
 # Static and default methods
 1. In Java 8, static and default methods are introduced in interfaces.
 2. These methods can have their implementation in interface itself, whereas abstract methods can have method 
 definition in interface.
-
+   ```
    interface MyFunctionalInterface {
       public void execute(); 
       public default void print (String text) { 
@@ -41,7 +42,7 @@ definition in interface.
          writer.write(text); 
       }
    }
-
+   ```
 # Lambda vs Method
 Lambda expression in Java has these main parts:
 1. No Name - As Lambda is an anonymous function so no need to have a name
