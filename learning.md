@@ -26,7 +26,8 @@ It helps to avoid NullPointerExceptions and provides a more clean and readable w
 1. If an interface has just one abstract method then those interfaces are categorized as functional interfaces.
 2. All those Single Abstract Method interfaces are annotated with @FunctionalInterface annotation.
 3. Some existing functional interfaces prior to Java 8 are Runnable and Comparator.
-4. Functional interface can have any number of default, static methods but can contain only one abstract method.
+4. By default, methods defined in an interface are abstract and no need to mention abstract keyword to define it.
+5. Functional interface can have any number of default, static methods but can contain only one abstract method.
 ```
    @FunctionalInterface
    public interface Comparator<T> {
@@ -37,7 +38,6 @@ It helps to avoid NullPointerExceptions and provides a more clean and readable w
       public abstract void run();
    }
 ```
-5. By default, methods defined in an interface are abstract and no need to mention abstract keyword to define it.
 
 # Static and default methods
 1. In Java 8, static and default methods are introduced in interfaces.
