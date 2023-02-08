@@ -69,6 +69,6 @@ infers the return type by checking the code
 
 # Lambda Expression Syntax
 ```
-            **()             ->             { }**
+            ()             ->             { }
 Lambda Input Parameters  Arrow  (Denoting Lambda) Body Lambda
 ```
